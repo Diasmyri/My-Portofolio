@@ -5,79 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dias Mayri Portfolio</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Concert+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <h1 class="logo">Dias Mayri</h1>
-      <nav class="nav-links">
-        <a href="#about">Tentang</a>
-        <a href="#education">Pendidikan</a>
-        <a href="#experience">Pengalaman</a>
-        <a href="#skills">Keterampilan</a>
-        <a href="#contact">Kontak</a>
-      </nav>
-      <button class="toggle-darkmode">🌓</button>
-    </div>
+
+  <header class="navbar container">
+    <h1 class="logo">Dias Mayri</h1>
+    <nav class="nav-links">
+      <a href="#about">Tentang</a>
+      <a href="#education">Pendidikan</a>
+      <a href="#experience">Pengalaman</a>
+      <a href="#skills">Keterampilan</a>
+      <a href="#projects">Proyek</a>
+      <a href="#certifications">Sertifikasi</a>
+      <a href="#contact">Kontak</a>
+    </nav>
   </header>
 
   <section class="hero">
-    <h2>Selamat Datang di Portofolio Saya!</h2>
-    <p>Seorang Web Developer yang passionate dengan desain dan teknologi</p>
+    <img src="dias.jpg" alt="Foto Dias Mayri" class="profile-photo">
+    <h2>Selamat Datang, Saya Dias Mayri</h2>
+    <p>Frontend Developer dengan semangat tinggi untuk membangun pengalaman web modern, cepat, dan responsif.</p>
+    <a href="#contact" class="btn-primary">Hubungi Saya</a>
   </section>
 
   <section id="about" class="content-section">
-    <h3>Tentang Saya</h3>
-    <p>Nama saya Dias Mayri, seorang pengembang web yang suka menciptakan tampilan interaktif dan bersih. Saya berkomitmen untuk terus belajar dan berkembang di dunia teknologi.</p>
+    <h2>Tentang Saya</h2>
+    <p>Saya Dias Mayri, seorang pengembang web yang fokus pada frontend development dan desain UI/UX. Saya menyukai tantangan dan terus memperbarui diri dengan teknologi terbaru.</p>
   </section>
 
   <section id="education" class="content-section">
-    <h3>Pendidikan</h3>
+    <h2>Pendidikan</h2>
     <ul>
-      <li>Universitas Contoh - Teknik Informatika (2020 - Sekarang)</li>
-      <li>SMA Contoh - IPA (2017 - 2020)</li>
+      <li>Universitas Contoh – Teknik Informatika (2020–Sekarang)</li>
+      <li>SMA Contoh – IPA (2017–2020)</li>
     </ul>
   </section>
 
   <section id="experience" class="content-section">
-    <h3>Pengalaman</h3>
+    <h2>Pengalaman</h2>
     <ul>
-      <li>Intern di Startup XYZ - Frontend Developer (2023)</li>
-      <li>Freelancer Web Design - (2021 - Sekarang)</li>
+      <li>Frontend Developer Intern di Startup XYZ (2023)</li>
+      <li>Freelancer Web Designer (2021–Sekarang)</li>
     </ul>
   </section>
 
-  <section id="skills" class="content-section skills">
-    <h3>Keterampilan</h3>
-    <div class="skill-cards">
-      <div class="skill-card">HTML</div>
-      <div class="skill-card">CSS</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">React</div>
-      <div class="skill-card">UI/UX Design</div>
+  <section id="skills" class="content-section">
+    <h2>Keterampilan</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Figma</div>
+      <div class="skill">Git & GitHub</div>
     </div>
   </section>
 
+  <section id="projects" class="content-section">
+    <h2>Proyek Unggulan</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Sistem Booking Konser</h3>
+        <p>Aplikasi pemesanan tiket konser yang user-friendly dan cepat.</p>
+        <a href="#">Lihat Proyek</a>
+      </div>
+      <div class="project-card">
+        <h3>Portofolio Pribadi</h3>
+        <p>Website portofolio yang responsif dengan desain elegan.</p>
+        <a href="#">Lihat Proyek</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="content-section">
+    <h2>Sertifikasi</h2>
+    <ul>
+      <li>Frontend Web Developer - Dicoding</li>
+      <li>UI/UX Design Fundamentals - Coursera</li>
+    </ul>
+  </section>
+
   <section id="contact" class="content-section">
-    <h3>Kontak Saya</h3>
+    <h2>Kontak</h2>
     <p>Email: dias.mayri@example.com</p>
     <p>LinkedIn: <a href="#">linkedin.com/in/diasmayri</a></p>
+    <a href="mailto:dias.mayri@example.com" class="btn-secondary">Kirim Email</a>
   </section>
 
   <footer class="footer">
     <p>© 2025 Dias Mayri. All rights reserved.</p>
   </footer>
 
-  <script>
-    const toggleBtn = document.querySelector('.toggle-darkmode');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
-
-    window.addEventListener("scroll", () => {
-      document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 50);
-    });
-  </script>
 </body>
 </html>
