@@ -33,9 +33,10 @@ body {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   color: #0d3b66;
+  margin-left: 20px; /* Memberi jarak kiri */
 }
 
 .nav-links a {
@@ -53,7 +54,7 @@ body {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 60px 20px 40px;
+  padding: 80px 20px 40px;
   background-color: #f9f9f9;
 }
 
@@ -131,7 +132,7 @@ body {
 .skill {
   background-color: #e3ecf5;
   color: #0d3b66;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 20px;
   font-weight: 500;
 }
@@ -220,5 +221,18 @@ body {
 
   .project-list {
     padding: 0 10px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
   }
 }
