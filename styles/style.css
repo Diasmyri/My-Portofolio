@@ -10,7 +10,8 @@
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
-    overflow-x: hidden; /* Menyembunyikan scroll horizontal */
+    overflow-x: hidden;
+    transition: background-color 0.5s ease;
   }
   
   /* Kontainer */
@@ -31,19 +32,19 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transisi pada navbar */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
   
   .navbar:hover {
-    background-color: #f4f4f4; /* Hover effect pada navbar */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan pada navbar */
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   
   .logo {
     font-size: 28px;
     font-weight: 600;
     color: #0d3b66;
-    transition: transform 0.3s ease, color 0.3s ease; /* Transisi pada logo */
+    transition: transform 0.3s ease, color 0.3s ease;
   }
   
   .logo:hover {
@@ -56,21 +57,21 @@
     text-decoration: none;
     color: #0d3b66;
     font-weight: 500;
-    transition: color 0.3s, transform 0.3s; /* Menambahkan transisi */
+    transition: color 0.3s, transform 0.3s ease;
   }
   
   .nav-links a:hover {
     color: #0077cc;
-    transform: translateY(-3px);
+    transform: translateY(-4px);
   }
   
   /* Hero Section */
   .hero {
     text-align: center;
-    padding: 60px 20px 40px;
+    padding: 80px 20px 60px;
     background-color: #f9f9f9;
     position: relative;
-    animation: fadeIn 1.5s ease-out; /* Animasi Fade In untuk Hero */
+    animation: fadeIn 2s ease-out;
   }
   
   @keyframes fadeIn {
@@ -93,15 +94,15 @@
   }
   
   .profile-photo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   }
   
   .hero h2 {
-    font-size: 28px;
+    font-size: 32px;
     color: #0d3b66;
     margin-bottom: 10px;
-    animation: slideInLeft 1s ease-out;
+    animation: slideInLeft 1.2s ease-out;
   }
   
   @keyframes slideInLeft {
@@ -117,22 +118,34 @@
     font-size: 18px;
     color: #555;
     margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   .btn-primary {
     background-color: #0d3b66;
     color: white;
-    padding: 12px 24px;
+    padding: 14px 28px;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .btn-primary:hover {
     background-color: #09416b;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   }
   
   .btn-primary:active {
@@ -153,8 +166,8 @@
   }
   
   .content-section h2 {
-    font-size: 24px;
-    margin-bottom: 25px;
+    font-size: 28px;
+    margin-bottom: 30px;
     color: #0d3b66;
     position: relative;
   }
@@ -167,9 +180,9 @@
     background-color: #0d3b66;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -10px;
+    bottom: -15px;
     opacity: 0;
-    animation: lineAnim 0.5s ease-out forwards;
+    animation: lineAnim 0.6s ease-out forwards;
   }
   
   @keyframes lineAnim {
@@ -192,14 +205,15 @@
   }
   
   .content-section ul li {
-    padding: 8px 0;
+    padding: 10px 0;
     font-size: 16px;
     border-bottom: 1px solid #eee;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .content-section ul li:hover {
     background-color: #f1f1f1;
+    transform: translateX(5px);
   }
   
   /* Skills */
@@ -214,16 +228,16 @@
   .skill {
     background-color: #e3ecf5;
     color: #0d3b66;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 20px;
     font-weight: 500;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   }
   
   .skill:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     background-color: #cfe3f7;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
   .skill:active {
@@ -235,21 +249,10 @@
   .project-list {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
     max-width: 800px;
     margin: auto;
-    animation: fadeInUp 1s ease-out;
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    animation: fadeInUp 1.5s ease-out;
   }
   
   .project-card {
@@ -263,13 +266,14 @@
   
   .project-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
   
   .project-card h3 {
     color: #0d3b66;
     margin-bottom: 10px;
     font-size: 20px;
+    transition: color 0.3s ease;
   }
   
   .project-card a {
@@ -282,7 +286,7 @@
   .project-card a:hover {
     color: #09416b;
     text-decoration: underline;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
   
   /* Buttons */
@@ -291,15 +295,15 @@
     margin-top: 20px;
     background-color: #eeeeee;
     color: #0d3b66;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .btn-secondary:hover {
     background-color: #dddddd;
-    transform: translateY(-3px);
+    transform: translateY(-4px);
   }
   
   .btn-secondary:active {
@@ -338,6 +342,29 @@
     transform: translateX(-50%);
     bottom: 10px;
     font-weight: 300;
+  }
+  
+  /* Animasi untuk loading dan transisi */
+  @keyframes loadingAnimation {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .loader {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0d3b66;
+    animation: loadingAnimation 1s ease-in-out infinite;
   }
   
   /* Responsive */
