@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dias Mayri Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Concert+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Dias Mayri</h1>
+      <nav class="nav-links">
+        <a href="#about">Tentang</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#skills">Keterampilan</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <button class="toggle-darkmode">🌓</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Selamat Datang di Portofolio Saya!</h2>
+    <p>Seorang Web Developer yang passionate dengan desain dan teknologi</p>
+  </section>
+
+  <section id="about" class="content-section">
+    <h3>Tentang Saya</h3>
+    <p>Nama saya Dias Mayri, seorang pengembang web yang suka menciptakan tampilan interaktif dan bersih. Saya berkomitmen untuk terus belajar dan berkembang di dunia teknologi.</p>
+  </section>
+
+  <section id="education" class="content-section">
+    <h3>Pendidikan</h3>
+    <ul>
+      <li>Universitas Contoh - Teknik Informatika (2020 - Sekarang)</li>
+      <li>SMA Contoh - IPA (2017 - 2020)</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="content-section">
+    <h3>Pengalaman</h3>
+    <ul>
+      <li>Intern di Startup XYZ - Frontend Developer (2023)</li>
+      <li>Freelancer Web Design - (2021 - Sekarang)</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="content-section skills">
+    <h3>Keterampilan</h3>
+    <div class="skill-cards">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">UI/UX Design</div>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h3>Kontak Saya</h3>
+    <p>Email: dias.mayri@example.com</p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/diasmayri</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Dias Mayri. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle-darkmode');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+
+    window.addEventListener("scroll", () => {
+      document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
